@@ -11,8 +11,11 @@ class NumberInfo(object):
     c_count = 0
 
     def __init__(self, num):
-        self.startingNumber = num
-        self.addRomanLetterCount_All()
+        if (num > 100) or (num < 1):
+            raise ValueError("The specifed number is not in the range of 1 to 100")
+        else:
+            self.startingNumber = num
+            self.addRomanLetterCount_All()
 
     def addRomanLetterCount_All(self):
         for i in range(1,self.startingNumber + 1):
@@ -52,7 +55,4 @@ class NumberInfo(object):
         # hundreds
         if (hundrets == 1):
             self.c_count += 1
-            
-        #def __str__(self):
-        #   return f"{self.startingNumber}: {i_count} i, {v_count} v, {x_count} x, {l_count} l, {c_count} c"
 

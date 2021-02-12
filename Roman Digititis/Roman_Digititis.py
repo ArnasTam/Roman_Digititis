@@ -2,8 +2,17 @@
 # 344 - Roman Digititis
 # Arnas Tamašauskas IFF-9/11
 #---------------------------------------------
-import InOut
-import NumberInfo
+from InOut import InOut
+from NumberInfo import NumberInfo
 
-allNumbers = InOut.InOut.inputStartingData()
-InOut.InOut.outputAnswer(allNumbers)
+
+inputFile = "StartingData.txt"
+resultFile = "Result.txt"
+
+# Using console 
+#allNumbers = InOut.inputStartingData_Console()
+#InOut.outputResult_Console(allNumbers)
+
+# Using files
+allNumbers = InOut.inputStartingData_File(inputFile)
+InOut.outputResult_File(allNumbers, resultFile, inputFile)
