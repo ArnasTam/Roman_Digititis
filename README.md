@@ -1,4 +1,5 @@
-# Roman_Digititis (https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=5&page=show_problem&problem=280)
+# Roman_Digititis 
+## [Link to the problem](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=5&page=show_problem&problem=280)
 
 Many persons are familiar with the Roman numerals for relatively small numbers. The symbols “i”,
 “v”, “x”, “l”, and “c” represent the decimal values 1, 5, 10, 50, and 100 respectively. To represent
@@ -14,24 +15,28 @@ pages of preface. How many “i”, “v”, “x”, “l”, and “c” chara
 the preface? For example, in a five page preface we’ll use the Roman numerals “i”, “ii”, “iii”, “iv”,
 and “v”, meaning we need 7 “i” characters and 2 “v” characters.
 
-Input
+## Input
 The input will consist of a sequence of integers in the range 1 to 100, terminated by a zero. For each
 such integer, except the final zero, determine the number of different types of characters needed to
 number the prefix pages with Roman numerals.
 
-Output
+## Output
 For each integer in the input, write one line containing the input integer and the number of characters
 of each type required. The examples shown below illustrate an acceptable format.
 
-Sample Input
+## Sample Input
+```
 1
 2
 20
 99
 0
+```
 
-Sample Output
+## Sample Output
+```
 1: 1 i, 0 v, 0 x, 0 l, 0 c
 2: 3 i, 0 v, 0 x, 0 l, 0 c
 20: 28 i, 10 v, 14 x, 0 l, 0 c
 99: 140 i, 50 v, 150 x, 50 l, 10 c
+```
